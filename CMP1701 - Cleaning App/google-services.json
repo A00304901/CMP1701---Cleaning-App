@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "67561901479",
+    "project_id": "smart-cleaning-810c9",
+    "storage_bucket": "smart-cleaning-810c9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:67561901479:android:c583c75e54bc5a3ae4fa82",
+        "android_client_info": {
+          "package_name": "com.company.smartcleaning"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCda6BiusJPlJv7tfcFWIYged1Tihzoyvg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -10,6 +10,10 @@
 	</PropertyGroup>
 
 	<ItemGroup>
+	  <MauiXaml Remove="View\CleaningTaskview.xaml" />
+	</ItemGroup>
+
+	<ItemGroup>
 	  <None Remove="View\CleaningDeviceView.xml" />
 	</ItemGroup>
 

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CMP1701 - Cleaning App.WinUI.Models
+namespace CMP1701___Cleaning_App.Droid.Models
 {
     /// <summary>
     /// The CleaningTask class represents a task in the cleaning application.

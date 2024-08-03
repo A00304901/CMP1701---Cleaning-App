@@ -4,8 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CMP1701 - Cleaning App.WinUI.Models
-{
+namespace CMP1701___Cleaning_App.Droid.Models
     /// <summary>
     /// The Room class represents a room within a cleaning application.
     /// It contains fields to store the room's unique identifier (RoomId), 

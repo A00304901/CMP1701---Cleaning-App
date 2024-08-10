@@ -13,12 +13,12 @@ namespace CMP1701___Cleaning_App.Droid.Models
     /// task and whether it has been completed. This class serves as a model for 
     /// organizing and managing cleaning tasks within the application.
     /// </summary>
-    internal class CleaningTask
+    public class CleaningTask
 {
     public int TaskId { get; set; }
-    public string TaskName { get; set; }
-    public string TaskDescription { get; set; }
-    public string RoomName { get; set; }
+    public string? TaskName { get; set; }
+    public string? TaskDescription { get; set; }
+    public string? RoomName { get; set; }
     public DateTime ScheduledTime { get; set; }
     public bool IsCompleted { get; set; }
 }

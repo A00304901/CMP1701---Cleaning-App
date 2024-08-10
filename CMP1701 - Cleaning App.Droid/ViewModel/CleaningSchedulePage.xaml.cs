@@ -1,30 +1,29 @@
 ﻿using Microsoft.Maui.Controls;
 using CMP1701___Cleaning_App.Droid.Models;
+using CMP1701___Cleaning_App.Droid.ViewModel;
+using Android.DeviceLock;
 
 namespace CMP1701___Cleaning_App
 {
     public partial class CleaningDevicePage : ContentPage
     {
-        private CleaningDevice _cleaningDevice;
+        private CleaningDevice CleaningDevice;
 
-        public CleaningDevicePage(CleaningDevice cleaningDevice)
+        public CleaningDevicePage(CleaningDevice _cleaningDevice)
         {
             InitializeComponent();
-            _cleaningDevice = cleaningDevice;
-            PopulateDeviceDetails();
+            CleaningDevice = _cleaningDevice;
+            populateDeviceDetails();
         }
 
-        private void PopulateDeviceDetails()
+        private void populateDeviceDetails()
         {
-            if (_cleaningDevice == null)
-                return;
-
-            DeviceIdLabel.Text = _cleaningDevice.DeviceId.ToString();
-            DeviceNameLabel.Text = _cleaningDevice.DeviceName;
-            DeviceTypeLabel.Text = _cleaningDevice.DeviceType;
-            BatteryLevelLabel.Text = $"{_cleaningDevice.BatteryLevel}%";
-            DeviceStatusLabel.Text = _cleaningDevice.DeviceStatus;
-            RoomAssignedLabel.Text = _cleaningDevice.RoomAssigned;
+            DeviceIdLabel.Text = CleaningDevice.DeviceId.ToString();
+            DeviceNameLabel.Text = CleaningDevice.DeviceName;
+            DeviceTypeLabel.Text = CleaningDevice.DeviceType;
+            BatteryLevelLabel.Text = $"{CleaningDevice.BatteryLevel}%";
+            DeviceStatusLabel.Text = CleaningDevice.DeviceStatus;
+            RoomAssignedLabel.Text = CleaningDevice.RoomAssigned;
         }
     }
 }
